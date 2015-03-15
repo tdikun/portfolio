@@ -17,10 +17,25 @@ $ ->
       $(this).next('.card').addClass('active')
 
   # -------
-  # Card BG
+  # Set Card BG on load
   # -------
 
   $('.card').each (i, e) =>
-    img = $(e).attr('data-img');
-    $('.card').eq(i).css('background-image', "url(/assets/images/" + img + "-" + (i + 1) + ".jpg)")
+    project = $(e).attr('data-img');
+    $('.card').eq(i).css('background-image', "url(/assets/images/" + project + "-" + (i + 1) + ".jpg)")
+
+  # -------
+  # Update dynamically
+  # -------
+
+  # $(document).on 'click', '.w-nav', ->
+  #   #swap out the images
+  #   project = $(this).attr('data-project');
+  #   $('.card').each (i) =>
+  #     $('.card').eq(i).css('background-image', "url(/assets/images/" + project + "-" + (i + 1) + ".jpg)")
+
+    # activate the new content by using a yaml file and hiding the inactive one.
+    # https://www.discovermeteor.com/blog/three-middleman-hacks-were-using-on-this-site/
+
+
 
