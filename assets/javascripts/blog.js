@@ -1,0 +1,1 @@
+!function(){$(function(){return $(document).on({scroll:function(){var n,o;return n=$(".content")[0].offsetTop,o=$(document).scrollTop(),o>n?$(".bar").addClass("fixed"):$(".bar").removeClass("fixed")}})})}.call(this);
