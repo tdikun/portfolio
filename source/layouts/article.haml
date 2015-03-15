@@ -4,6 +4,7 @@
     %title= "#{current_page.data.title} - Graphic Design & Web Development - Tim Dikun - Houston, TX - timdikun.com"
     %meta{ 'http-equiv' => 'Content-Type' , :content => "text/html;charset=utf-8" }
     %meta{ :property => "fb:app_id" , :content => "691307177565276"}
+    %meta{ :property => "fb:admins", :content => "514019324" }
     %meta{ :property => "og:type" , :content => "article"}
     %meta{ :property => "og:url" , :content => "http://timdikun.com#{current_page.url}" }
     %meta{ :property => "og:title" , :content => current_page.data.title }
@@ -44,7 +45,9 @@
         %h1
           = current_page.data.title_main
     .about
-      %p Written by Tim Dikun, a graphic designer for <a href="http://www.envylabs.com" target="_blank">Envy Labs</a> in Orlando, FL.
+      %p Written by Tim Dikun, a Houston-based graphic designer for <a href="http://www.madewithenvy.com" target="_blank">Envy</a> in Orlando, FL.
+      %p
+        = link_to 'View Portfolio', '/'
       %ul
         %li
           %a.mail{ :href => "mailto:tdikun@gmail.com" }
