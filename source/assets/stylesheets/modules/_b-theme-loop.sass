@@ -1,0 +1,18 @@
+//Variable bar bg color per post
+$themes: "journal_2013_01-fundamentals-of-design" #9786ec #8879d4, "journal_2013_02-crossfit-year-in-review" #49d878 #41bf6b, "journal_2013_03-epistemological-heart-to-heart" #f66 #f00, "journal_2014_04-myth-of-should" #4ecae9 #47b6d2
+@each $theme in $themes
+  .#{nth($theme, 1)}
+    a
+      color: nth($theme, 2)
+      +transition(color, $pointfive)
+      &:hover
+        color: nth($theme, 3)
+        +transition(color, $pointfive)
+    .bar
+      background-color: nth($theme, 2)
+    ::selection
+      background: nth($theme, 2)
+      color: #fff
+    ::-moz-selection
+      background: nth($theme, 2)
+      color: #fff

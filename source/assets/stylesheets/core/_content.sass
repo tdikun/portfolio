@@ -1,0 +1,65 @@
+// *************************************
+//
+//   Content
+//   -> Typography
+//
+// *************************************
+
+// -------------------------------------
+//   Headings
+// -------------------------------------
+
+h1, h2, h3,
+h4, h5, h6
+  font-family: $c-header-fontFamily
+  .journal &
+    font-family: $blog-header-fontFamily
+    font-weight: 700
+
+h1
+  font-size: rem(80px)
+  line-height: 1
+  margin: 0 auto
+  max-width: rem(600px)
+  +respond-to($phone)
+    font-size: rem(70px)
+  .journal &
+    max-width: 100%
+
+h2
+  font-size: rem(50px)
+  line-height: 1
+  @extend %m-0
+
+h3
+  font-size: rem(30px)
+  .journal &
+    @extend %m-t-b
+    @extend %m-b-s
+
+h4
+  font-size: rem(25px)
+  .journal &
+    @extend %m-b-s
+
+h5
+  font-size: rem(20px)
+
+h6
+  font-size: rem(16px)
+
+// -------------------------------------
+//   Utilities
+// -------------------------------------
+
+%c-condense, .c-condense
+  font-size: 1.5rem
+
+%c-italic, .c-italic
+  font-style: italic
+
+.c-center
+  text-align: center
+
+.c-18
+  font-size: rem(18px)
