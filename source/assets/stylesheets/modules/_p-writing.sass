@@ -1,0 +1,38 @@
+.writing
+  margin-bottom: rem(100px)
+  overflow: auto
+
+  p
+    max-width: rem(600px)
+    margin-bottom: 50px
+
+.writing-articles
+  .article-wrapper
+    border-bottom: 1px solid #ededed
+    padding: 0 0 10px 0
+    margin: 10px 0
+    width: calc(50% - 10px)
+    height: 100px
+    +respond-to($phone)
+      float: none
+      width: 100%
+
+    &:nth-of-type(even)
+      margin-left: 20px
+      +respond-to($phone)
+        margin-left: 0
+
+    &:hover
+      background: #fff
+
+    .article-container
+
+      .img
+        margin-right: 20px
+      .date
+        color: $base-link-color
+        font: 400 rem(18px) $condensed-fontFamily
+        text-transform: uppercase
+
+      .title
+        font: 700 rem(18px) $base-fontFamily

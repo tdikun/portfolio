@@ -1,0 +1,51 @@
+// *************************************
+//
+//   Base
+//   -> Base-level tags (body, p, etc.)
+//
+// *************************************
+
+html
+  font-size: $base-fontSize
+
+body
+  background: $base-background
+  color: $base-color
+  font-family: $base-fontFamily
+  font-size: 100%
+  line-height: $base-lineHeight
+  padding: 0 rem(20px)
+  padding-bottom: rem(100px)
+  &.journal
+    color: $blog-base-color
+    padding: 0
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+
+p, blockquote
+  font: rem(20px) $base-fontFamily
+  line-height: $base-lineHeight
+  .journal &
+    font-family: $blog-fontFamily
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a
+  color: $base-link-color
+  text-decoration: none
+  &:hover,
+  &:focus
+    text-decoration: none
+
+

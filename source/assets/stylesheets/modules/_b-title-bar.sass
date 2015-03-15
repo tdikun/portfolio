@@ -1,0 +1,29 @@
+.bar
+  display: block
+  min-height: 5px
+  max-height: 5px
+  width: 100%
+  position: fixed
+  z-index: 100
+  +transition(max-height, 1s)
+
+  .words
+    display: none
+    max-width: 60rem
+    margin: 0 auto
+
+    p
+      color: #fff
+      font: italic 1.5rem 'Merriweather', serif
+      margin: 10px 0
+      float: left
+      +respond-to($phone)
+        padding: 0 20px
+
+.fixed
+  max-height: 50%
+  top: 0
+  +transition(max-height, 1s)
+
+  .words
+    display: block
