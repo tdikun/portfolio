@@ -97,17 +97,15 @@
       content: ''
       position: absolute
       background: $base-link-color
+      background: linear-gradient(rgba(0,0,0,0)0% , rgba(0,0,0,1) 100%)
       color: #fff
       right: rem(-20px)
       bottom: rem(-63px)
-      height: rem(50px)
-      width: 75%
+      height: rem(75px)
+      width: 100%
       text-align: right
       padding: 20px
-      transform: rotate(-7deg)
-      -webkit-transform: rotate(-7deg)
       z-index: 0
-      transition: transform .5s, bottom .5s
       +respond-to($phone)
         bottom: rem(-70px)
 
@@ -127,10 +125,6 @@
 
     &:hover
       cursor: pointer
-      &:after
-        bottom: rem(-55px)
-        +respond-to($phone)
-          bottom: rem(-65px)
       &:before
         bottom: rem(15px)
         +respond-to($phone)
