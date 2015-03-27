@@ -8,6 +8,14 @@
   +respond-to($phone)
     margin: 20px
 
+  p:first-of-type:not(.editors-note):first-letter,
+  .editors-note + p:first-letter
+    font-size: 72px
+    float: left
+    line-height: 60px
+    padding-top: 4px
+    padding-right: 8px
+
 .editors-note
   @extend %c-condense
   @extend %c-italic
