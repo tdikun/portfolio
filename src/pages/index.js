@@ -92,13 +92,11 @@ const listItemStyles = {
   padding: 0
 }
 
-
-
 // data
 const links = [
   {
     title: "1st hire @ Teaching.com",
-    subtitle: "133% ARR growth and growing"
+    subtitle: "3+ years of 33% ARR growth"
   },
   {
     title: "First Product Designer @ True Coach",
@@ -124,11 +122,11 @@ const IndexPage = () => {
         Tim Dikun
       </h1>
       <h2 style={subHeadingStyles}>
-        I used to design products,
+        I used to build products,
         <br />
-        now I lead teams.
+        now I build product companies.
       </h2>
-      <h3 style={subSubHeadingStyles}>This is my work reduced to bullet points.</h3>
+      <h3 style={subSubHeadingStyles}>This is my career reduced to bullet points.</h3>
       <div style={linkRow}>
         <a href="mailto:tdikun@gmail.com" style={btnStyles}>Get In Touch</a>
         <a href="https://twitter.com/tdikun" style={linkStyles}>Twitter</a>
