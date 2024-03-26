@@ -95,8 +95,8 @@ const listItemStyles = {
 // data
 const links = [
   {
-    title: "1st hire @ Teaching.com",
-    subtitle: "3+ years of 33% ARR growth"
+    title: "First hire @ Teaching.com",
+    subtitle: "Multiple products launched; Revenue growth: 📈"
   },
   {
     title: "First Product Designer @ True Coach",
@@ -136,7 +136,12 @@ const IndexPage = () => {
       <div>
         <p style={tagStyles}>Current Role:</p>
         <p style={currentTitle}>COO & VP of Product @ Teaching.com</p>
-        <p>Makers of K12 (B2E, B2C) educational software with 50M+ AU</p>
+        <p>Makers of K12 (B2E, B2C) educational software with 100M+ AU</p>
+        <p>Check out a few of our products:
+          <a href="https://reading.com" style={linkStyles}>Reading.com</a>
+          <a href="https://typing.com" style={linkStyles}>Typing.com</a>
+          <a href="https://nitrotype.com" style={linkStyles}>Nitro Type</a>
+        </p>
       </div>
       <hr style={hrStyles} />
       <div style={accStyles}>

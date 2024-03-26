@@ -5,3 +5,5 @@ bin/
 .DS_Store
 .cache
 source/assets/javascripts/vendor
+node_modules
+.vscode
