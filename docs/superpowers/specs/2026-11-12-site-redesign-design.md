@@ -10,7 +10,7 @@ Tim's LinkedIn (Profile.pdf, Nov 2026). Where the original brief and LinkedIn di
 - Teaching.com makes Typing.com, Nitro Type, and Reading.com. More than 10 million students use its products each year. Profitable, no outside capital.
 - First hire at Teaching.com (2016). Revenue has grown 50x; team grew from 2 to 40, nearly all hired by Tim.
 - Built six functions from scratch (product design, analytics, marketing, curriculum, people ops, legal) and hired the leaders who run them now. Runs legal in-house.
-- Reading.com: phonics app a parent and child use together. 120 scripted lessons of about 15 minutes each, so a parent with no training can teach their kid to read. Top-3 grossing app in the App Store's Kids category; #2 in Kids 5 & Under. Grossing rank has improved every year since 2022 (from the brief; not contradicted by LinkedIn).
+- Reading.com: phonics app a parent and child use together. 120 scripted lessons of about 15 minutes each, so a parent with no training can teach their kid to read. Top-3 grossing app in the App Store's Kids category; #2 in Kids 5 & Under. (Rank-improvement-since-2022 claim dropped at Tim's request.)
 - Before Teaching.com: a decade designing software, including Code School and TrueCoach, both later acquired.
 - Links: linkedin.com/in/timdikun, reading.com, teaching.com, teaching.com/manifesto. Email tdikun@gmail.com.
 
