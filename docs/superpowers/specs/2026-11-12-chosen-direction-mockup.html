@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>timdikun.com, Paper with a serif</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-size:18px;background:#888}
+  .bar{position:sticky;top:0;z-index:9;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 16px;background:#000;color:#fff;font:500 13px/1.2 Inter,sans-serif}
+  .bar button{font:600 13px Inter,sans-serif;padding:8px 12px;border-radius:6px;border:1px solid #555;background:#222;color:#fff;cursor:pointer}
+  .tag{font:600 12px/1.3 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:10px 16px;background:#fff;color:#000;border-top:1px solid #000}
+  a{color:inherit}
+
+  section{--bg:#f6f4ef;--fg:#16151a;--mute:#5d5a63;--rule:#dcd8cf;--accent:#4a2fe0;
+    background:var(--bg);color:var(--fg);font-family:Inter,sans-serif;padding:clamp(56px,10vw,128px) 16px clamp(56px,8vw,104px)}
+  [data-theme=dark] section{--bg:#141317;--fg:#f1eff4;--mute:#a19daa;--rule:#2d2b33;--accent:#a99bff}
+  .wrap{max-width:1040px;margin:0 auto}
+  h1{font:600 clamp(48px,9vw,100px)/.98 "Inter Tight",sans-serif;letter-spacing:-.035em}
+  .titles{font:500 clamp(21px,2.8vw,28px)/1.3 "Inter Tight",sans-serif;letter-spacing:-.01em;margin-top:20px}
+  .titles span{color:var(--mute)}
+  .sum{font-size:clamp(17px,1.9vw,19px);line-height:1.65;color:var(--mute);max-width:44ch;margin-top:24px}
+  .links{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px}
+  .links a{color:var(--accent);font-weight:500;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+  .stats{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:40px 24px;margin-top:clamp(64px,9vw,104px);padding-top:40px;border-top:1px solid var(--rule)}
+  @media(min-width:860px){.stats{grid-template-columns:repeat(4,1fr)}}
+  .n{font:600 clamp(44px,6vw,68px)/1 "Inter Tight",sans-serif;letter-spacing:-.04em}
+  .l{margin-top:10px;color:var(--mute);font-size:15px;line-height:1.4;max-width:20ch}
+
+  /* P1: serif name + serif numbers */
+  .p1 h1{font:400 clamp(54px,10vw,112px)/.95 Newsreader,serif;letter-spacing:-.03em}
+  .p1 .n{font:400 clamp(48px,6.5vw,76px)/1 Newsreader,serif;letter-spacing:-.025em}
+
+  /* P2: sans name, italic serif titles, serif numbers */
+  .p2 .titles{font:400 italic clamp(24px,3.2vw,32px)/1.25 Newsreader,serif;letter-spacing:-.005em}
+  .p2 .n{font:400 clamp(48px,6.5vw,76px)/1 Newsreader,serif;letter-spacing:-.025em}
+
+  /* P3: sans display, serif reading text */
+  .p3 .sum{font:400 clamp(20px,2.2vw,23px)/1.55 Newsreader,serif;color:var(--fg);max-width:40ch}
+  .p3 .l{font:400 italic 17px/1.35 Newsreader,serif}
+</style>
+</head>
+<body>
+<div class="bar"><span>Paper, three ways to bring in a serif (Newsreader)</span><button id="t" type="button">Show dark versions</button></div>
+
+<div class="tag">P1 · Serif for the name and the numbers</div>
+<section class="p1"><div class="wrap">
+  <h1>Tim Dikun</h1>
+  <p class="titles">Co-founder of Reading.com. <span>COO of Teaching.com.</span></p>
+  <p class="sum">Teaching.com makes Typing.com, Nitro Type, and Reading.com, used by more than 10 million students a year. I was its first hire. Since then revenue has grown 50x, profitably and with no outside capital.</p>
+  <div class="links"><a href="#">LinkedIn</a><a href="#">tdikun@gmail.com</a></div>
+  <ul class="stats">
+    <li><div class="n">50x</div><div class="l">revenue growth since I joined</div></li>
+    <li><div class="n">10M+</div><div class="l">students a year</div></li>
+    <li><div class="n">Top 3</div><div class="l">grossing, App Store Kids</div></li>
+    <li><div class="n">40</div><div class="l">people on the team, nearly all hired by me</div></li>
+  </ul>
+</div></section>
+
+<div class="tag">P2 · Sans name, italic serif titles, serif numbers</div>
+<section class="p2"><div class="wrap">
+  <h1>Tim Dikun</h1>
+  <p class="titles">Co-founder of Reading.com. <span>COO of Teaching.com.</span></p>
+  <p class="sum">Teaching.com makes Typing.com, Nitro Type, and Reading.com, used by more than 10 million students a year. I was its first hire. Since then revenue has grown 50x, profitably and with no outside capital.</p>
+  <div class="links"><a href="#">LinkedIn</a><a href="#">tdikun@gmail.com</a></div>
+  <ul class="stats">
+    <li><div class="n">50x</div><div class="l">revenue growth since I joined</div></li>
+    <li><div class="n">10M+</div><div class="l">students a year</div></li>
+    <li><div class="n">Top 3</div><div class="l">grossing, App Store Kids</div></li>
+    <li><div class="n">40</div><div class="l">people on the team, nearly all hired by me</div></li>
+  </ul>
+</div></section>
+
+<div class="tag">P3 · Sans for headings and numbers, serif for the reading text</div>
+<section class="p3"><div class="wrap">
+  <h1>Tim Dikun</h1>
+  <p class="titles">Co-founder of Reading.com. <span>COO of Teaching.com.</span></p>
+  <p class="sum">Teaching.com makes Typing.com, Nitro Type, and Reading.com, used by more than 10 million students a year. I was its first hire. Since then revenue has grown 50x, profitably and with no outside capital.</p>
+  <div class="links"><a href="#">LinkedIn</a><a href="#">tdikun@gmail.com</a></div>
+  <ul class="stats">
+    <li><div class="n">50x</div><div class="l">revenue growth since I joined</div></li>
+    <li><div class="n">10M+</div><div class="l">students a year</div></li>
+    <li><div class="n">Top 3</div><div class="l">grossing, App Store Kids</div></li>
+    <li><div class="n">40</div><div class="l">people on the team, nearly all hired by me</div></li>
+  </ul>
+</div></section>
+
+<script>
+  const b=document.getElementById('t'),r=document.documentElement;
+  b.onclick=()=>{const d=r.dataset.theme==='dark';r.dataset.theme=d?'light':'dark';b.textContent=d?'Show dark versions':'Show light versions'};
+</script>
+</body>
+</html>
