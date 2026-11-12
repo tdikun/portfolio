@@ -1,54 +1,35 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# timdikun.com
 
-## 🚀 Quick start
+Source for timdikun.com: a single static page (plain HTML and CSS, no build step, no JavaScript). Everything that gets published lives in `site/`.
 
-1.  **Create a Gatsby site.**
+## Preview locally
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+```sh
+python3 -m http.server -d site 8000
+```
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+Then open http://localhost:8000.
 
-2.  **Start developing.**
+## Regenerate the social image
 
-    Navigate into your new site’s directory and start it up.
+`site/og.png` (1200x630) is rendered from `scripts/og.html` with headless Chrome:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```sh
+./scripts/make-og.sh
+```
 
-3.  **Open the code and start customizing!**
+Edit `scripts/og.html` if the hero text or numbers change, then rerun the script and commit the new `og.png`.
 
-    Your site is now running at http://localhost:8000!
+## Deploy
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+The live domain is served by Netlify. `netlify.toml` sets the publish folder (`site`) and cache headers; there is no build command.
 
-4.  **Learn more**
+One-time setup: in Netlify, connect the existing site to the GitHub repo `tdikun/portfolio`, with production branch `master`, publish directory `site`, and an empty build command.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+After that, deploying is: merge into `master` and `git push`.
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Alternative one-command deploy without the GitHub connection:
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+```sh
+npx netlify-cli deploy --prod --dir site
+```
